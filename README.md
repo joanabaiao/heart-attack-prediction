@@ -36,25 +36,31 @@ This Python script serves as the Streamlit application entry point.
 - View available data tables in the Snowpark environment.
 - Get descriptive statistics and visualize data distributions.
 
-<img class=readme-image src="images/data_analysis_1.png" />
-<img class=readme-image src="images/data_analysis_2.png" />
-<img class=readme-image src="images/data_analysis_3.png" />
-<img class=readme-image src="images/data_analysis_4.png" />
+<p float="left">
+  <img src="images/data_analysis_1.png" width="49%" />
+  <img src="images/data_analysis_2.png" width="49%" /> 
+</p>
+<p float="left">
+  <img src="images/data_analysis_3.png" width="49%" />
+  <img src="images/data_analysis_4.png" width="49%" /> 
+</p>
 
 #### Model Training:
 
 - Choose the classifier algorithm (e.g., XGBoost, Random Forest) and the dataset to use for training. Optionally, use Optuna for hyperparameter optimization;
 - Train the chosen classifier using the selected dataset and the optimized settings;
 
-<img class=readme-image src="images/train_model.png" />
+<img src="images/train_model.png" width="49%" />
 
 #### Model management:
 
 - View a catalog of trained models with details like training date and evaluation metrics.
 - Display the performance of the trained model using relevant metrics (e.g., confusion matrix, accuracy, precision, recall, F1-score).
 
-<img class=readme-image src="images/model_catalog.png" />
-<img class=readme-image src="images/model_catalog_2.png" />
+<p float="left">
+  <img src="images/model_catalog.png" width="49%" />
+  <img src="images/model_catalog_2.png" width="49%" /> 
+</p>
 
 #### Inference execution:
 
@@ -62,15 +68,17 @@ This Python script serves as the Streamlit application entry point.
 - Generate predictions for the selected dataset using the chosen model.
 - View the results and model's performance on this new data.
 
-<img class=readme-image src="images/inference.png" />
-<img class=readme-image src="images/inference_2.png" />
-<img class=readme-image src="images/inference_3.png" />
+<p float="left">
+  <img src="images/inference.png" width="49%" />
+  <img src="images/inference_2.png" width="49%" /> 
+</p>
+<img src="images/inference_3.png" width="49%" />
 
 #### Inference History:
 
 - View past inference runs.
 
-<img class=readme-image src="images/inference_runs.png" />
+<img src="images/inference_runs.png" width="49%" />
 
 ## Running the application
 
@@ -92,13 +100,3 @@ schema = "PUBLIC"
 4. Run the notebooks `01_DB_setup.ipynb` and `02_ML.ipynb`;
 5. Run the application using `streamlit run app.py`.
 
-<style>
-  .img {
-    display: inline-block;
-  }
-  img.readme-image {
-    width: 49%;
-    padding: 1px;
-    display: inline-block;
-  }
-</style>
